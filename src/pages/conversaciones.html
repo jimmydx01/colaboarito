@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATS</title>
+    <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+
+</head>
+<body>
+     <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+    <section>
+    <header class="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg">
+        <div class="px-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo and title -->
+                <div class="flex shrink-0">
+                    <a aria-current="page" class="flex items-center" href="/src/index.html">
+                        <img class="h-7 w-auto" src="/src/img/1455590.svg" alt="">
+                        <p class="sr-only">Viaja Seguro</p>
+                    </a>
+                </div>
+                
+                <!-- Menu toggle button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMenu()" class="text-gray-900 hover:text-gray-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Desktop navigation -->
+                <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
+                    <a aria-current="page" class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./ruta.html">ULTIMAS RUTAS</a>
+                   <a aria-current="page" class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./ruta.html">TUS VIAJES</a>
+                    <a aria-current="page" class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./conversaciones.html">CHATS</a>
+                    <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./comunidad.html">COMUNIDAD</a>
+                    <a aria-current="page" class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./perfil.html">PERFIL</a>
+                    <button class="Btn" onclick="window.location.href='inicio.html';">
+                     <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+                <div class="text">Salir  </div>
+                </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav id="menu" class="fixed inset-x-0 top-16 z-20 bg-white shadow-lg md:hidden hidden">
+            <div class="px-4 py-3">
+                <a aria-current="page" class="block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./ruta.html">ULTIMAS RUTAS</a>
+                <a class="block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./comunidad.html">COMUNIDAD</a>
+                <a aria-current="page" class="block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./perfil.html">PERFIL</a>
+                
+        </nav>
+    </header>
+ </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Sección de Conversaciones -->
+<div class="container mx-auto my-8 px-4">
+    <h2 class="text-3xl font-bold mb-4">Conversaciones Recientes</h2>
+    <ul class="space-y-4">
+        <!-- Conversación 1 -->
+        <li class="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+            <div class="border-b px-4 py-2">
+                <div class="flex items-center">
+                    <img class="h-12 w-12 rounded-full border-2 border-white dark:border-gray-800"
+                         src="https://randomuser.me/api/portraits/men/1.jpg" alt="Imagen de perfil">
+                    <div class="ml-3">
+                        <h3 class="font-bold text-xl text-gray-800 dark:text-white">John Doe</h3>
+                        <div class="flex items-center text-gray-700 dark:text-gray-300">
+                            <svg class="h-6 w-6 text-gray-600 dark:text-gray-400" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z" />
+                    </svg>
+                            Pasajero
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 py-2">
+                <div class="flex gap-2 items-center text-gray-800 dark:text-gray-300 mb-2">
+                    <svg class="h-6 w-6 text-gray-600 dark:text-gray-400" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z" />
+                    </svg>
+                    <span><strong class="text-black dark:text-white">Último mensaje:</strong> "¿A qué hora salimos?"</span>
+                </div>
+                <div class="flex gap-2">
+                    <button class="flex items-center bg-blue-500 text-white gap-1 px-4 py-2 cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-blue-400 duration-300 hover:gap-2 hover:translate-x-3"  onclick="window.location.href='mensaje.html';">
+                        Ver <svg class="w-5 h-5" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                    </button>
+                    <button
+                          class="flex justify-center items-center gap-2 w-28 h-12 cursor-pointer rounded-md shadow-2xl text-white font-semibold bg-gradient-to-r from-[#fb7185] via-[#e11d48] to-[#be123c] hover:shadow-xl hover:shadow-red-500 hover:scale-105 duration-300 hover:from-[#be123c] hover:to-[#fb7185]"
+                          onclick="confirmCancellation();">
+                          <svg viewBox="0 0 15 15" class="w-5 fill-white">
+                            <svg
+                              class="w-6 h-6"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                                stroke-linejoin="round"
+                                stroke-linecap="round"
+                              ></path>
+                            </svg>
+                          </svg>
+                          Eliminar
+                        </button>
+                </div>
+            </div>
+        </li>
+
+        <!-- Conversación 2 -->
+        <li class="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+            <div class="border-b px-4 py-2">
+                <div class="flex items-center">
+                    <img class="h-12 w-12 rounded-full border-2 border-white dark:border-gray-800"
+                         src="https://randomuser.me/api/portraits/men/2.jpg" alt="Imagen de perfil">
+                    <div class="ml-3">
+                        <h3 class="font-bold text-xl text-gray-800 dark:text-white">Jane Smith</h3>
+                        <div class="flex items-center text-gray-700 dark:text-gray-300">
+                            <svg class="h-5 w-5 text-gray-400 dark:text-gray-600 mr-1" fill="currentColor"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path
+                                    d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                            </svg>
+                            Conductor
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 py-2">
+                <div class="flex gap-2 items-center text-gray-800 dark:text-gray-300 mb-2">
+                    <svg class="h-6 w-6 text-gray-600 dark:text-gray-400" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z" />
+                    </svg>
+                    <span><strong class="text-black dark:text-white">Último mensaje:</strong> "Listo para salir!"</span>
+                </div>
+                <div class="flex gap-2">
+                    <button class="flex items-center bg-blue-500 text-white gap-1 px-4 py-2 cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-blue-400 duration-300 hover:gap-2 hover:translate-x-3"  onclick="window.location.href='mensaje.html';">
+                        Ver <svg class="w-5 h-5" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                    </button>
+                    <button
+                          class="flex justify-center items-center gap-2 w-28 h-12 cursor-pointer rounded-md shadow-2xl text-white font-semibold bg-gradient-to-r from-[#fb7185] via-[#e11d48] to-[#be123c] hover:shadow-xl hover:shadow-red-500 hover:scale-105 duration-300 hover:from-[#be123c] hover:to-[#fb7185]"
+                          onclick="confirmCancellation();">
+                          <svg viewBox="0 0 15 15" class="w-5 fill-white">
+                            <svg
+                              class="w-6 h-6"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                                stroke-linejoin="round"
+                                stroke-linecap="round"
+                              ></path>
+                            </svg>
+                          </svg>
+                          Eliminar
+                        </button>
+                </div>
+            </div>
+        </li>
+
+        <!-- Agrega más conversaciones según sea necesario -->
+    </ul>
+</div>
+
+<script>
+         function confirmCancellation() {
+            if (confirm("¿Estás seguro de que deseas eliminar esta conversacion?")) {
+                alert("chat eliminado.");
+                // Aquí se puede agregar la lógica para cancelar la reserva en el backend
+            }
+        }
+</script>
+
+
+
+</body>
+</html>

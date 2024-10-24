@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/output.css">
+    <title>anuncio</title>
+</head>
+<body>
+    <main class="pt-10">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-6 text-center">Crear Anuncio de Viaje</h2>
+        
+        <!-- Formulario para crear un viaje -->
+        <form action="/crear-viaje" method="POST" class="space-y-6">
+            <!-- Punto de partida -->
+            <div>
+                <label for="punto_partida" class="block text-sm font-medium text-gray-700">Punto de Partida</label>
+                <input type="text" id="punto_partida" name="punto_partida" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Ejemplo: UNEMI, Milagro" required>
+            </div>
+
+            <!-- Destino -->
+            <div>
+                <label for="destino" class="block text-sm font-medium text-gray-700">Destino</label>
+                <input type="text" id="destino" name="destino" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Ejemplo: Guayaquil" required>
+            </div>
+
+            <!-- Hora de salida -->
+            <div>
+                <label for="hora_salida" class="block text-sm font-medium text-gray-700">Hora de Salida</label>
+                <input type="time" id="hora_salida" name="hora_salida" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" required>
+            </div>
+
+            <!-- Asientos disponibles -->
+            <div>
+                <label for="asientos_disponibles" class="block text-sm font-medium text-gray-700">Asientos Disponibles</label>
+                <input type="number" id="asientos_disponibles" name="asientos_disponibles" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Ejemplo: 3" min="1" max="5" required>
+            </div>
+
+            <!-- Descripción del viaje -->
+            <div>
+                <label for="descripcion" class="block text-sm font-medium text-gray-700">Descripción del Viaje</label>
+                <textarea id="descripcion" name="descripcion" rows="3" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Escribe detalles adicionales, como paradas o condiciones especiales..." required></textarea>
+            </div>
+
+            <!-- Precio del viaje -->
+            <div>
+                <label for="precio" class="block text-sm font-medium text-gray-700">Precio por Asiento (opcional)</label>
+                <input type="number" id="precio" name="precio" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Ejemplo: 2.50" step="0.01">
+            </div>
+
+            <!-- Botón para crear el viaje -->
+            <div class="flex justify-center">
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Publicar Viaje</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

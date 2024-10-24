@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/output.css">
+</head>
+<body>
+    <div class="flex h-screen bg-gray-100">
+  <!-- Sidebar de conversaciones -->
+  <div class="w-1/4 bg-white border-r border-gray-300">
+    <div class="p-4 text-xl font-semibold text-gray-800">Mensajes</div>
+    <div class="overflow-y-auto h-full">
+      <!-- Repetir para cada conversación -->
+      <div class="px-4 py-2 cursor-pointer hover:bg-gray-200">
+        <div class="flex items-center space-x-3">
+          <img src="/src/img/istockphoto-1320207978-1024x1024.jpg" alt="User" class="w-10 h-10 rounded-full">
+          <div>
+            <h4 class="text-sm font-semibold text-gray-900">Jimmy Martinez</hh4>
+            <p class="text-xs text-gray-600">hola sigue disponible</p>
+          </div>
+        </div>
+      </div>
+      <!-- Fin conversación -->
+    </div>
+  </div>
+
+  <!-- Área de contenido de mensajes -->
+  <div class="w-3/4 flex flex-col">
+    <!-- Encabezado -->
+    <div class="p-4 bg-white border-b border-gray-300">
+      <div class="flex items-center space-x-3">
+        <img src="/src/img/istockphoto-1437816897-1024x1024.jpg" alt="User" class="w-10 h-10 rounded-full">
+        <div>
+          <h4 class="text-lg font-semibold text-gray-900">Angye </h4>
+          <p class="text-sm text-gray-600">Activo hace 5 minutos</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Historial de mensajes -->
+    <div class="flex-1 p-4 overflow-y-auto bg-gray-50">
+      <!-- Mensaje recibido -->
+      <div class="flex items-start space-x-3">
+        <img src="/src/img/istockphoto-1320207978-1024x1024.jpg" alt="User" class="w-8 h-8 rounded-full">
+        <div class="bg-white p-3 rounded-lg shadow-sm">
+          <p class="text-sm text-gray-800">hola sigue disponible.</p>
+        </div>
+      </div>
+
+      <!-- Mensaje enviado -->
+      <div class="flex justify-end items-start space-x-3 mt-4">
+        <div class="bg-blue-500 text-white p-3 rounded-lg shadow-sm">
+          <p class="text-sm">si aun tengo 2 asientos disponibles .</p>
+        </div>
+        <img src="/src/img/istockphoto-1437816897-1024x1024.jpg" alt="User" class="w-8 h-8 rounded-full">
+      </div>
+    </div>
+
+    <!-- Área de envío de mensajes -->
+    <div class="p-4 bg-white border-t border-gray-300">
+      <div class="flex space-x-3">
+        <input type="text" placeholder="Escribe un mensaje..." class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

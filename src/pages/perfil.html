@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERFIL</title>
+    <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+    <section>
+    <header class="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg">
+        <div class="px-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo and title -->
+                <div class="flex shrink-0">
+                    <a aria-current="page" class="flex items-center" href="/src/index.html">
+                        <img class="h-7 w-auto" src="/src/img/1455590.svg" alt="">
+                        <p class="sr-only">Viaja Seguro</p>
+                    </a>
+                </div>
+                
+                <!-- Menu toggle button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMenu()" class="text-gray-900 hover:text-gray-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Desktop navigation -->
+                <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
+                    <a aria-current="page" class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./ruta.html">ULTIMAS RUTAS</a>
+                    <a aria-current="page" class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./ruta.html">TUS VIAJES</a>
+                   <a aria-current="page" class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./conversaciones.html">
+                        CHATS 
+                        <span id="notification" class="bg-red-500 text-white rounded-full text-xs px-1 ml-1 hidden">1</span>
+                    </a>
+                    <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./comunidad.html">COMUNIDAD</a>
+                    <a aria-current="page" class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./perfil.html">PERFIL</a>
+                    <button class="Btn" onclick="window.location.href='inicio.html';">
+                     <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+                <div class="text">Salir  </div>
+                </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav id="menu" class="fixed inset-x-0 top-16 z-20 bg-white shadow-lg md:hidden hidden">
+            <div class="px-4 py-3">
+                <a aria-current="page" class="block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./ruta.html">ULTIMAS RUTAS</a>
+                <a class="block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./comunidad.html">COMUNIDAD</a>
+                <a aria-current="page" class="block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900" href="./perfil.html">PERFIL</a>
+                
+        </nav>
+    </header>
+ </section>
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+ <!-- perfil conductor -->
+<section class="w-full h-screen mx-auto bg-gradient-to-r from-green-400 to-yellow-500 flex dark:bg-gray-900">
+    <div class="lg:w-[80%] md:w-[90%] sm:w-[92%] xs:w-[96%] mx-auto flex items-center justify-center">
+        <div class="w-full md:p-6 xs:p-4 rounded-lg md:mt-0 sm:p-8 dark:bg-gray-900">
+            <div class="w-full mx-auto shadow-xl rounded-sm border border-gray-200 dark:border dark:border-gray-800">
+
+                <!-- Formulario del Conductor -->
+                <h1 class="text-2xl font-semibold p-4 bg-gray-200 shadow-lg dark:bg-gray-800 dark:text-white rounded-sm">
+                    Perfil del Conductor
+                </h1>
+
+                <div class="w-full md:flex sm:gap-2 xs:gap-0">
+
+                    <!-- Pasos del Conductor -->
+                    <div class="lg:w-[20%] md:w-[30%] xs:w-full bg-gray-100 flex md:flex-col xs:flex-row xs:justify-center sm:gap-2 dark:bg-gray-700">
+                        <div id="stepConductor1" class="text-gray-900 rounded-sm py-2 bg-green-500 pl-4 text-white">
+                            <div class="flex gap-2 text-xl font-semibold">
+                                Paso 1: Datos personales
+                            </div>
+                        </div>
+                        <div id="stepConductor2" class="hidden rounded-sm py-2 bg-gray-400 pl-4 text-gray-900 hover:bg-gray-500">
+                            <div class="flex gap-2 text-xl font-semibold">
+                                Paso 2: Datos del vehículo y foto del conductor
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paso 1: Datos personales del Conductor -->
+                    <div id="formStepConductor1" class="step-content bg-gray-100 md:w-[88%] xs:w-[92%] px-4 py-6">
+                        <div class="w-full mb-4">
+                            <label for="nombre_conductor" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre</label>
+                            <input type="text" id="nombre_conductor" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5" required>
+                        </div>
+                        <div class="w-full mb-4">
+                            <label for="correo_conductor" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo</label>
+                            <input type="email" id="correo_conductor" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5" required>
+                        </div>
+                        <div class="w-full mb-4">
+                            <label for="telefono_conductor" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Teléfono</label>
+                            <input type="tel" id="telefono_conductor" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5" required>
+                        </div>
+                        <button id="nextConductorStep1" class="bg-green-700 text-white px-4 py-2 rounded-lg">Siguiente</button>
+                    </div>
+
+                    <!-- Paso 2: Datos del vehículo y foto del Conductor -->
+                    <div id="formStepConductor2" class="step-content hidden bg-gray-100 md:w-[88%] xs:w-[92%] px-4 py-6">
+                        <div class="w-full mb-4">
+                            <label for="placa" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Placa</label>
+                            <input type="text" id="placa" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5" required>
+                        </div>
+                        <div class="w-full mb-4">
+                            <label for="modelo" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Modelo del Vehículo</label>
+                            <input type="text" id="modelo" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5" required>
+                        </div>
+                        <div class="w-full mb-4">
+                            <label for="foto_vehiculo" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Foto del Vehículo</label>
+                            <input type="file" id="foto_vehiculo" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5" required>
+                        </div>
+                        <div class="w-full mb-4">
+                            <label for="foto_conductor" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Foto del Conductor</label>
+                            <input type="file" id="foto_conductor" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5" required>
+                        </div>
+                        <button class="bg-green-700 text-white px-4 py-2 rounded-lg">Finalizar</button>
+                    </div>
+                </div>
+
+                <!-- Formulario del Pasajero -->
+                <h1 class="text-2xl font-semibold p-4 bg-gray-200 shadow-lg dark:bg-gray-800 dark:text-white rounded-sm mt-8">
+                    Perfil del Pasajero
+                </h1>
+
+                <div class="w-full md:flex sm:gap-2 xs:gap-0">
+
+                    <!-- Pasos del Pasajero -->
+                    <div class="lg:w-[20%] md:w-[30%] xs:w-full bg-gray-100 flex md:flex-col xs:flex-row xs:justify-center sm:gap-2 dark:bg-gray-700">
+                        <div id="stepPasajero1" class="text-gray-900 rounded-sm py-2 bg-blue-500 pl-4 text-white">
+                            <div class="flex gap-2 text-xl font-semibold">
+                                Paso 1: Datos personales
+                            </div>
+                        </div>
+                        <div id="stepPasajero2" class="hidden rounded-sm py-2 bg-gray-400 pl-4 text-gray-900 hover:bg-gray-500">
+                            <div class="flex gap-2 text-xl font-semibold">
+                                Paso 2: Foto del pasajero
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paso 1: Datos personales del Pasajero -->
+                    <div id="formStepPasajero1" class="step-content bg-gray-100 md:w-[88%] xs:w-[92%] px-4 py-6">
+                        <div class="w-full mb-4">
+                            <label for="nombre_pasajero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre</label>
+                            <input type="text" id="nombre_pasajero" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5" required>
+                        </div>
+                        <div class="w-full mb-4">
+                            <label for="correo_pasajero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo</label>
+                            <input type="email" id="correo_pasajero" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5" required>
+                        </div>
+                        <div class="w-full mb-4">
+                            <label for="telefono_pasajero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Teléfono</label>
+                            <input type="tel" id="telefono_pasajero" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5" required>
+                        </div>
+                        <button id="nextPasajeroStep1" class="bg-blue-700 text-white px-4 py-2 rounded-lg">Siguiente</button>
+                    </div>
+
+                    <!-- Paso 2: Foto del pasajero -->
+                    <div id="formStepPasajero2" class="step-content hidden bg-gray-100 md:w-[88%] xs:w-[92%] px-4 py-6">
+                        <div class="w-full mb-4">
+                            <label for="foto_pasajero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Foto del Pasajero</label>
+                            <input type="file" id="foto_pasajero" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg w-full p-2.5" required>
+                        </div>
+                        <button class="bg-blue-700 text-white px-4 py-2 rounded-lg">Finalizar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+<br>
+<br>
+<div
+    class="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900">
+    <!-- Banner o imagen de fondo opcional -->
+    <div class="rounded-t-lg h-32 overflow-hidden">
+        <img class="object-cover object-top w-full" src='https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Mountain'>
+    </div>
+    
+    <!-- Foto del conductor -->
+    <div class="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
+        <img class="object-cover object-center h-32" src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Conductor'>
+    </div>
+    
+    <!-- Información del conductor -->
+    <div class="text-center mt-2">
+        <h2 class="font-semibold">John Doe</h2>
+        <p class="text-gray-500">Conductor</p>
+    </div>
+    
+    <!-- Información del vehículo -->
+    <div class="mt-4 text-center">
+        <h3 class="font-semibold">Vehículo</h3>
+        <div class="mx-auto w-24 h-24 relative mt-2 border-2 border-gray-300 rounded-full overflow-hidden">
+            <img class="object-cover object-center h-24" src='/src/img/auto3.jpg' alt='Vehículo'>
+        </div>
+        <p class="mt-2 text-gray-600">Modelo: Toyota Corolla</p>
+        <p class="text-gray-600">Placa: ABC-1234</p>
+    </div>
+
+    <!-- Ubicación opcional -->
+    <div class="mt-4 text-center">
+        <h3 class="font-semibold">Ubicación</h3>
+        <p class="text-gray-600">Guayaquil, Ecuador</p>
+    </div>
+
+    <!-- Botones para editar perfil y crear usuario -->
+    <div class="p-4 border-t mx-8 mt-4">
+        <button class="w-full mb-2 block rounded-full bg-blue-500 hover:bg-blue-700 text-white font-semibold px-6 py-2">Editar Perfil</button>
+        <button class="w-full block rounded-full bg-green-500 hover:bg-green-700 text-white font-semibold px-6 py-2" onclick="window.location.href='anuncio.html';">Crear anucnio</button>
+    </div>
+    
+    <!-- Sección de calificaciones -->
+    <div class="p-4 border-t mx-8 mt-4 text-center">
+        <h3 class="font-semibold">Calificaciones</h3>
+        <ul class="mt-2 text-gray-700">
+            <li>⭐⭐⭐⭐⭐ - Excelente conductor</li>
+            <li>⭐⭐⭐⭐ - Puntual y respetuoso</li>
+        </ul>
+    </div>
+</div>
+
+
+<div
+    class="max-w-2xl mx-4 sm:max-w-md md:max-w-lg lg:max-w-lg xl:max-w-lg sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900">
+    <!-- Banner o imagen de fondo opcional -->
+    <div class="rounded-t-lg h-32 overflow-hidden">
+        <img class="object-cover object-top w-full" src='https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Background'>
+    </div>
+    
+    <!-- Foto del pasajero -->
+    <div class="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
+        <img class="object-cover object-center h-32" src='/src/img/istockphoto-1320207978-1024x1024.jpg' alt='Pasajero'>
+    </div>
+    
+    <!-- Información del pasajero -->
+    <div class="text-center mt-2">
+        <h2 class="font-semibold">Jane Doe</h2>
+        <p class="text-gray-500">Pasajero</p>
+        <p class="text-gray-600">Correo: janedoe@example.com</p>
+        <p class="text-gray-600">Teléfono: +593 123 456 789</p>
+    </div>
+
+    <!-- Botones para editar perfil -->
+    <div class="p-4 border-t mx-8 mt-4">
+        <button class="w-full mb-2 block rounded-full bg-blue-500 hover:bg-blue-700 text-white font-semibold px-6 py-2">Editar Perfil</button>
+    </div>
+    
+    <!-- Sección de calificaciones -->
+    <div class="p-4 border-t mx-8 mt-4 text-center">
+        <h3 class="font-semibold">Calificaciones</h3>
+        <ul class="mt-2 text-gray-700">
+            <li>⭐⭐⭐⭐ - Muy buen pasajero</li>
+            <li>⭐⭐⭐⭐⭐ - Siempre puntual</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script>
+    // Controlador para los pasos del conductor
+    document.getElementById('nextConductorStep1').addEventListener('click', function () {
+        document.getElementById('stepConductor1').classList.add('hidden');
+        document.getElementById('stepConductor2').classList.remove('hidden');
+        document.getElementById('formStepConductor1').classList.add('hidden');
+        document.getElementById('formStepConductor2').classList.remove('hidden');
+    });
+
+    // Controlador para los pasos del pasajero
+    document.getElementById('nextPasajeroStep1').addEventListener('click', function () {
+        document.getElementById('stepPasajero1').classList.add('hidden');
+        document.getElementById('stepPasajero2').classList.remove('hidden');
+        document.getElementById('formStepPasajero1').classList.add('hidden');
+        document.getElementById('formStepPasajero2').classList.remove('hidden');
+    });
+</script>
+
+</body>
+</html>
